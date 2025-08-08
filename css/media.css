@@ -1,0 +1,140 @@
+@media (max-width: 768px) {
+  .container {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing .header {
+    padding: 5px 30px;
+  }
+  .landing .header .logo {
+    font-size: 1rem;
+    padding: 10px 0px;
+  }
+  .landing .header .fa-bars {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .landing .header .links {
+    display: none;
+  }
+  .landing .header .links.open {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 20px;
+    z-index: 999;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+  }
+  .landing .header .links.open li a {
+    color: var(--main-color);
+    font-weight: bold;
+  }
+  .landing .header .fa-bars {
+    display: block;
+  }
+  .settings-box .icon {
+    top: 30%;
+  }
+  .intro-txt h1 {
+    font-size: 30px;
+  }
+  .about {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+  }
+  .about .img::before {
+    display: none;
+  }
+  .timeLine .timeLine-content .content {
+    font-size: 8px;
+  }
+  .timeLine .timeLine-content .content h3 {
+    font-size: 15px;
+  }
+  .Features .feat-box {
+    width: calc(100% / 2);
+  }
+  .testimonials .ts-info {
+    grid: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .landing .header .links.open {
+    top: 50px;
+  }
+  .landing .header .links.open li:not(:last-child) {
+    margin: 0;
+  }
+  .landing .header .fa-bars::after {
+    right: 27px;
+  }
+  .intro-txt {
+    width: 100%;
+  }
+  .intro-txt h1 {
+    font-size: 25px;
+  }
+  .intro-txt p {
+    font-size: 15px;
+    width: 70%;
+    display: inline-block;
+  }
+  .popup {
+    width: 85%;
+  }
+  .Features .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .Features .feat-box {
+    width: 100%;
+    margin: 0;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact form .left,
+  .contact form .right {
+    width: 100%;
+    float: none;
+  }
+}
